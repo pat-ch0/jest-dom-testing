@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Basics syntax - EcmaScript",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch --coverage",
     "dev": "node index"
   },
   "keywords": [
@@ -13,5 +14,12 @@
     "Script"
   ],
   "author": "DaCoDeMaNiaK",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.7",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^23.0.1"
+  }
 }
